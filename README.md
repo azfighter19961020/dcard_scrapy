@@ -8,6 +8,9 @@
 <br></br>
 - 由於捲動會造成前面data流失，所以使用count來控制捲動次數以及終止條件
 <br></br>
+# 運行方式
+> python run.py<br>
+如果count.txt存在則先刪除count.txt，避免重複偵測造成次數不對(20200526Update)
 ## 檔案結構<br>
 ├─dcardSpider<br>
 │  count.txt   終止所需文件<br>
