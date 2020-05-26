@@ -1,6 +1,7 @@
 # dcard_scrapy
 # crawler for dcard by scrapy
 # 使用scrapy & selenium爬取dcard熱門文章
+
 <img src="https://github.com/charlie11438/dcard_scrapy/blob/master/sql.png?raw=true" />
 - 修改downloadermiddleware讓scrapy與selenium交互，達到捲動效果
 <br></br>
@@ -8,10 +9,13 @@
 <br></br>
 - 由於捲動會造成前面data流失，所以使用count來控制捲動次數以及終止條件
 <br></br>
+
 # 運行方式
 > python run.py<br>
-如果count.txt存在則先刪除count.txt，避免重複偵測造成次數不對(20200526Update)
-## 檔案結構<br>
+如果count.txt存在則先刪除count.txt，避免重複偵測造成次數不對(20200526Update)<br>
+
+## 檔案結構
+
 ├─dcardSpider<br>
 │  count.txt   終止所需文件<br>
 │  items.py    創建item Field供儲存<br>
